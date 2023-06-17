@@ -1,0 +1,7 @@
+spring.mvc.view.prefix: /WEB-INF/jsp/
+spring.mvc.view.suffix: .jsp
+
+api:
+    bitcoin.url: http://api.coinlayer.com/live?access_key=bc1a3654e8b07829a341b1820b859ae8
+    currency-converter.url: https://api.freecurrencyapi.com/v1/latest?apikey=exsR0c8nYWhFmxFt5FZ7mrsj3TLHwuq8K5fXpo2n&currencies
+    currency-by-ip.url: https://ipapi.co/{{ip}}/currency/

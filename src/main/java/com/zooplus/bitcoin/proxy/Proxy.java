@@ -20,8 +20,7 @@ public class Proxy {
     @Value("${api.currency-by-ip.url}")
     private String currencyByIpUrl;
 
-    public Proxy() {
-    }
+    public Proxy() {}
 
     public String getBitCoinValues() {
         return restTemplate.getForObject(bitcoinUrl, String.class);

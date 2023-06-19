@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -22,12 +24,20 @@
         <br>
         <label>IP</label>
         <input type="text" name="ip" placeholder="Enter your Ip (Optional)"/>
+        <input type="hidden" name="token" value="${jwt}"/>
         <br>
         <br>
         </form>
 
         <h5>Current unit price is</h5>
         <h5 id ="price">"${price}"</h5>
+                <h5 id ="price123">"${jwt}"</h5>
+
+                <%
+                   Cookie token = new Cookie("token", request.getAttribute("jwt").toString());
+                   token.setMaxAge(3600);
+                   response.addCookie( token );
+                %>
     </center>
 </body>
 </html>

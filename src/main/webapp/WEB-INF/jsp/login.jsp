@@ -1,7 +1,23 @@
-<h3>Login Form</h3>
-<br/>
-<form action="http://localhost:8080/validate-login" method="post">
-    Email:<input type="text" name="email"/><br/><br/>
-    Password:<input type="password" name="password"/><br/><br/>
-    <input type="submit" value="login"/>"
-</form>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Currency Converter</title>
+</head>
+<body>
+    <center>
+        <form method="post" action="/login" name="productForm">
+        <br>
+        <label>Username</label>
+        <input type="text" name="username" />
+        <br>
+        <br>
+        <label>Password</label>
+        <input type="password" name="password" />
+        <br>
+        <br>
+        <input type="submit"/>
+        </form>
+    </center>
+</body>
+</html>
